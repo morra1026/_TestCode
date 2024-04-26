@@ -1,0 +1,31 @@
+//debugger settings
+{
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "name": "C/C++: cl.exe 활성 파일 Debug Build 및 디버그",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${fileDirname}\\${fileBasenameNoExtension}_D.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "console": "integratedTerminal",
+            "preLaunchTask": "cl.exe c++latest Debug Build"
+        },
+        {
+            "name": "C/C++: cl.exe 활성 파일 Release Build 및 실행",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "console": "integratedTerminal",
+            "preLaunchTask": "cl.exe c++latest Release Build"
+        }
+    ]
+}
