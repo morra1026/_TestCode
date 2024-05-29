@@ -16,16 +16,16 @@ public:
     virtual void FuncBase2() { std::cout << __FUNCTION__ << std::endl; }
 };
 
-class Drived : public Base1, public Base2
+class Derived : public Base1, public Base2
 {
 public:
-    virtual ~Drived() {};
+    virtual ~Derived() {};
 };
 
 
 int main() 
 {
-    auto d = Drived{};
+    auto d = Derived{};
 
     auto p = static_cast<void*>(&d);    //void* 로 갔다오면서 뭔가 데이터가 사라지나???
     auto sc_pb1 = static_cast<Base1*>(p);

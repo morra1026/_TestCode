@@ -8,16 +8,16 @@ public:
     virtual ~Base(){};
 }; 
 
-class DriveA : public Base
+class DeriveA : public Base
 {
 public:
-    ~DriveA() final {};
+    ~DeriveA() final {};
 };
 
-class DriveB : public Base
+class DeriveB : public Base
 {
 public:
-    ~DriveB() final {};
+    ~DeriveB() final {};
 };
 
 class Other
@@ -38,18 +38,18 @@ bool is(Base* pi)
 int main()
 {
     auto base = Base{};
-    auto drive_a = DriveA{};
+    auto derive_a = DeriveA{};
     auto other = Other{};
 
     cout << "is<Base>(&base) : " << is<Base>(&base) << endl;
-    cout << "is<DriveA>(&base) : " << is<DriveA>(&base) << endl;
-    cout << "is<DriveB>(&base) : " << is<DriveB>(&base) << endl;
+    cout << "is<DeriveA>(&base) : " << is<DeriveA>(&base) << endl;
+    cout << "is<DeriveB>(&base) : " << is<DeriveB>(&base) << endl;
     cout << "is<Other>(&base) : " << is<Other>(&base) << endl;
 
-    cout << "is<Base>(&drive_a) : " << is<Base>(&drive_a) << endl;
-    cout << "is<DriveA>(&drive_a) : " << is<DriveA>(&drive_a) << endl;
-    cout << "is<DriveB>(&drive_a) : " << is<DriveB>(&drive_a) << endl;
-    cout << "is<Other>(&drive_a) : " << is<Other>(&drive_a) << endl;
+    cout << "is<Base>(&derive_a) : " << is<Base>(&derive_a) << endl;
+    cout << "is<DeriveA>(&derive_a) : " << is<DeriveA>(&derive_a) << endl;
+    cout << "is<DeriveB>(&derive_a) : " << is<DeriveB>(&derive_a) << endl;
+    cout << "is<Other>(&derive_a) : " << is<Other>(&derive_a) << endl;
 
     return 0;
 }
