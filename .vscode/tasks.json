@@ -9,7 +9,7 @@
                 "/Zi",
                 "/EHsc",
                 "/MDd",
-                "/std:c++20",
+                "/std:c++latest",
                 "/Fe:", ".\\${fileBasenameNoExtension}_D.exe",
                 "/Fd:", ".\\${fileBasenameNoExtension}_D.pdb",
                 "/Fo:", ".\\${fileBasenameNoExtension}_D.obj",

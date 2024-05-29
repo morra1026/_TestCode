@@ -1,29 +1,6 @@
 {
     "configurations": [
         {
-            "name": "Win32_Debug_c++20",
-            "includePath": [
-                "${workspaceFolder}/**",
-                "E:/WorkSpace/SA_Server/Library/boost_1_81_0/inc/**"
-            ],
-            "defines": [
-                "_DEBUG",
-                "UNICODE",
-                "_UNICODE"
-            ],
-            "windowsSdkVersion": "10.0.22000.0",
-            "compilerPath": "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Tools/MSVC/14.36.32532/bin/Hostx64/x64/cl.exe",
-            "cStandard": "c17",
-            "cppStandard": "c++20",
-            "intelliSenseMode": "${default}",
-            "compilerArgs": [],
-            "browse": {
-                "path": [],
-                "limitSymbolsToIncludedHeaders": true
-            },
-            "mergeConfigurations": false
-        },
-        {
             "name": "Win32_Debug_c++23",
             "includePath": [
                 "${workspaceFolder}/**",
